@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ai_surge_pricing',
+        'NAME': 'Ai_surge_pricing',
         'USER': 'root',
-        'PASSWORD': 'Kiran@123',
+        'PASSWORD': 'Nare9502@',
         'HOST': 'localhost',
         'PORT': '3306',
     }
