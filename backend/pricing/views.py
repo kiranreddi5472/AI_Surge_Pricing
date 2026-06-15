@@ -100,3 +100,13 @@ def get_history(request):
     requests = RideRequest.objects.all().order_by('-timestamp')[:50]
     serializer = RideRequestSerializer(requests, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def get_history(request):
+    """
+    Returns past predictions for the Analytics Dashboard.
+    """
+    # Get last 50 requests, ordered by newest first
+    requests = RideRequest.objects.all().order_by('-timestamp')[:50]
+    serializer = RideRequestSerializer(requests, many=True)
+    return Response(serializer.data)S
